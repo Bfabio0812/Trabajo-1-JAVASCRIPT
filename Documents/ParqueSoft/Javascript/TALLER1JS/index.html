@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+</head>
+<body>
+    <script>
+        let opcion = prompt("Menú:\n1. Hamburguesa - $30000\n2. Pizza - $45000\n3. Ensalada - $15000\n4. Pasta - $17000\nIngrese el número de su elección:");
+
+        if (opcion === null) {
+            alert("Gracias por su visita");
+        } else {
+            opcion = parseInt(opcion);
+
+            switch(opcion) {
+                case 1:
+                    alert("Usted seleccionó: Hamburguesa - ");
+                    break;
+                case 2:
+                    alert("Usted seleccionó: Pizza -");
+                    break;
+                case 3:
+                    alert("Usted seleccionó: Ensalada ");
+                    break;
+                case 4:
+                    alert("Usted seleccionó: Pasta ");
+                    break;
+                default:
+                    alert("El número seleccionado no está en el menú");
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
